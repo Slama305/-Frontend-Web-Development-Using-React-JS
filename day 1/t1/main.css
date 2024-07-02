@@ -1,0 +1,26 @@
+p {
+    color: red;
+}
+p , div {
+    color: blue;
+}
+.myDiv >.mainClass {
+    color: blueviolet;
+}
+div p {
+    color: azure;
+    background-color: black;
+}
+input[type="text"].myClass {
+     background-color: antiquewhite;
+     
+}
+div + span {
+    color: green;
+}
+p.myClass {
+    color: chocolate;
+}
+div#myDiv {
+     background-color: bisque;
+}
