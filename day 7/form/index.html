@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="data">
+        <input type="text" name="username" id="name" placeholder="name" required>
+        <span id="nameError"></span>
+        <input type="number" name="age" id="age" placeholder="age" required>
+        <span id="ageError"></span>
+        <input type="email" name="email" id="email" placeholder="examble@gmail.com" required>
+         <span id="emailError"></span><br>
+        <button type="button" id="addButton">Add</button>
+        <button type="reset" id="resetButton">Reset</button>
+    </div>
+    <br>
+    <div class="database" id="tables">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="user">
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

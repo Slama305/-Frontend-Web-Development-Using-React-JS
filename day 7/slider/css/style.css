@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+  .slider {
+    padding: 10px 0;
+    width: 100%;
+    /* height: 80%; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218, 203, 203);
+   }
+    img {
+     height: 90vh;
+     width: 50%;
+     /* object-fit: cover; */
+     border: 1px solid ;
+     border-radius: 16px;
+     box-shadow: 1px 1px 5px red;
+
+   }
+
+   .controls {
+    
+     text-align: center;
+     margin-top: 10px;
+     border: 1px solid black;
+     border-radius: 20px;
+     width: 50%;
+   }
+
+   button {
+     margin: 4px 16px;
+     background-color: rgba(163, 117, 117, 0);
+     border: none;
+     font-size: 20px;
+     color: rgb(128, 31, 4);
+     text-shadow: 1px 1px 5px rgb(53, 45, 45);
+     transition: .5s;
+   }
+   button:hover{
+    color: aliceblue;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+   }
