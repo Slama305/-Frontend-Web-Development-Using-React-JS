@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <style>
+       div {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding: 100px 0px;
+    color: brown;
+}
+    </style>
+</head>
+<body>
+    <button id="start">Start</button>
+    <div class="clock" id="myclock"></div>
+
+    <script>
+        var stop;
+     function start() {
+    alert("Clock Started");
+    times(); 
+     stop = setInterval(times, 1000);
+     }
+function times() {
+    var now = new Date(); 
+    var h = now.getHours();
+    var m = now.getMinutes();
+    var sec = now.getSeconds();
+
+    var clock = h + ':' + m + ':' + sec;
+    document.getElementById('myclock').innerText = clock;
+}
+var btn = document.getElementById('start');
+btn.addEventListener('click', function() {
+    if (btn.innerHTML !== "Stop") {
+        start();
+        btn.innerHTML = "Stop";
+    } else {
+        clearInterval(stop); 
+        alert("Clock Stopped");
+        btn.innerHTML = "Start";
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if (event.altKey && event.key === 'w') {
+        clearInterval(stop); 
+        alert("Clock Stopped");
+        btn.innerHTML = "Start";
+    }
+});
+    </script>
+</body>
+</html>

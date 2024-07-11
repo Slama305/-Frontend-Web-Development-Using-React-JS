@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       
+var obj = {
+    w: 10, 
+    h: 10, 
+
+    area: function() {
+        return obj.h * obj.w;
+    },
+
+    perimeter: function() {
+        return 2 * (obj.w + obj.h);
+    },
+    displayInfo: function() {
+        var area = obj.area();
+        var perimeter = obj.perimeter();
+        console.log(`Object Info:
+            Width: ${obj.w}
+            Height: ${obj.h}
+            Area: ${area}
+            Perimeter: ${perimeter}`);
+    }
+};
+obj.displayInfo();
+    </script>
+</body>
+</html>

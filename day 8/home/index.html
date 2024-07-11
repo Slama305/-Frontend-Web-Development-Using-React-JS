@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="home">
+        <nav>
+            <div><img src="./logo.png.webp" alt=""></div>
+            <div class="linkes">
+                <a href="#">Home</a>
+                <a href="#">About us </a>
+                <a href="#">Courses </a>
+                <a href="#">News </a>
+            </div>
+            <div class="login" id="reg">
+                <a  href="./login.html">login</a>
+               
+            </div>
+            <div id="data">
+                <p id="name"></p>
+                <!-- <p id="pass"></p> -->
+                <p id="email"></p>
+            </div>
+        </nav>
+        <div class="main">
+            <h2>Get The Best Free Online Courses</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla
+                dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="ex@gmail.com">
+            <button>Sign Up Now</button>
+        </div>
+      
+
+    </section>
+    <script>
+    window.addEventListener('load', function() {
+    var data=location.search.split('&');
+    var names=data[0].split("=");
+    var emails=data[2].split("=");
+    console.log(data)
+    var name=names[1];
+    console.log(name);
+    var email = emails[1].replace(/%40/g, "@");
+    console.log(email);
+    document.getElementById('reg').style.display="none";
+    document.getElementById('data').style.display="block";
+    document.getElementById('name').innerText ="name:"+ name;
+    document.getElementById('email').innerText ="email:"+ email;
+});
+
+    </script>
+</body>
+</html>
