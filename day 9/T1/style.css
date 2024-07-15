@@ -1,0 +1,53 @@
+h1 span{
+    color: orange;
+}
+.content{
+    max-width: 950px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 16px 0;
+}
+.col-2{
+    width: 45%;
+    padding: 8px;
+    margin: 8px;
+}
+.col-3{
+    width: 70%;
+    padding: 8px;
+    margin: 8px;
+
+}
+.col-1{
+    width: 20%;
+    padding: 8px;
+    margin: 8px;
+
+}
+img{
+    width: 100%;
+    border-radius: 16px;
+}
+.col-bg{
+    background-color: rgb(100, 100, 73);
+    border-radius: 16px;
+}
+.card  {
+    padding: 4px;
+    border: 0.5px solid black;
+    text-align: center;
+    border-radius: 16px;
+}
+@media (max-width:600px) {
+    .row{
+        flex-direction: column;
+
+    }
+    .col-1,.col-2,.col-3{
+        width: 95%;
+    }
+}
