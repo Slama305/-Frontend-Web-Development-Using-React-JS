@@ -1,0 +1,19 @@
+@use '../var/colors' as*;
+@use '../mixin/mixin'as*;
+
+.foot{
+    @include flex(space-around , center ,row);
+     padding: 24px;
+     background-color: $bg;
+     div{
+        h1{
+            color: $head-color;
+        }
+        p,h3{
+            color: $p-color;
+            padding: 10px;
+        }
+     }
+  
+   }
+ 

@@ -1,0 +1,73 @@
+@use './componant/NAV'as *;
+@use './var/colors' as *;
+@use './componant/cards' as *;
+@use './componant/form' as*;
+@use './componant/footer' as *;
+@use './mixin/mixin' as*;
+ *{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+ }
+
+
+.home {
+  @include bg-img("./bg.jpeg");
+  .content{
+    @include flex(center , center ,column);
+    height: 90vh;
+    text-align: center;
+    background-color: #080808da;
+    div{
+      padding: 24px;
+    }
+    .welcom{
+      color: $head-color;
+      padding-bottom: 10px;
+    }
+    .pW{
+      color: $p-color;
+    }
+  .inputs{
+    input{
+      padding: 8px 16px;
+      background-color: rgba(12, 11, 11, 0.66);
+      color: $p-color;
+      border: none;
+      border-radius: 10px;
+      
+    }
+  }
+
+  }
+}
+section{
+  .continar{
+    @include flex(space-around , center ,row);
+    padding: 24px;
+    
+  }
+  .head{
+    color: $head-color;
+    text-align: center;
+    padding: 24px;
+    p{
+      padding: 8px 48px;
+      color: black;
+    }
+  }
+
+}
+.contact{
+  @include flex(space-around , center ,row);
+  padding: 24px;
+  div{
+    padding: 10px;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+@use '../var/colors' as *;
+@use '../mixin/mixin'as*;
+header {
+    background-color: $bg;
+    @include flex(space-between , center ,row); 
+    align-items: center;
+    padding: 4px 16px;
+    h1{
+        font-weight: 900;
+        font-size: 2em;
+        color: $head-color;
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                padding-left: 24px;
+                color: $p-color;
+            }
+        }
+    }
+}
