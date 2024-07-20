@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+        }
+        .head {
+            text-align: center;
+            color: rgb(226, 43, 73);
+            padding: 10px;
+        }
+        .img {
+            background-color: #e0d5f4;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .btns {
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            width: 100px;
+            padding: 10px 16px;
+            margin: 10px;
+            border: .3px red solid;
+            border-radius: 10px;
+            color: aliceblue;
+            background-color: rgb(178, 105, 148);
+            transition: .5s;
+        }
+        button:hover {
+            box-shadow: 0px 0px 5px 1px red;
+            background-color: rgb(192, 71, 141);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>My Fruits</h1> 
+    </div>
+    <div class="img">
+        <img src="./apple.jpeg" alt="apple" >
+        <img src="./banana.jpeg" alt="banana" >
+        <img src="./mango.jpeg" alt="mango" >
+        <img src="./orange.jpeg" alt="orange" >
+        <img src="./strawberry.jpeg" alt="strawberry">
+    </div>
+    <div class="btns">
+        <button id="str">is string</button>
+        <button id="startA">start 'a'</button>
+        <button id="filter">filter</button>
+        <button id="all">display all</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
